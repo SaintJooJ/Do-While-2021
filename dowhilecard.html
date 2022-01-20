@@ -1,0 +1,90 @@
+<!-- 
+  Cartão do Do While criado nas aulas da Rockseat, NLW Heat - Origin.
+-->
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Jorge Luiz - DoWhile 2021</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="avatar">
+          <span>
+            <img src="images/selorocket.svg" alt="Selo Rocketseat" />
+          </span>
+          <img
+            src="https://scontent.fpll5-1.fna.fbcdn.net/v/t1.6435-9/80436831_835806176875388_101745619168657408_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeEljJGVCkXHcQWDPIzfLrY-34s1Lp4Knw3fizUungqfDWM_gNtvRNBH0N7ZWppGdM9Bd3JPcje_YeMwfb5PpWz-&_nc_ohc=K3oxBFlAR4YAX9Ns1vF&_nc_ht=scontent.fpll5-1.fna&oh=00_AT8FYDz05KZhoOyd2z4Y1Ln6XLNh7pAhVtCWK0LaU0SakA&oe=620FBC64"
+            alt="Foto pessoal"
+          />
+        </div>
+
+        <h1>Jorge Luiz</h1>
+        <a href="https://github.com/SaintJooJ" target="_blank">
+          <img src="images/github.svg" alt="Ícone Github" />
+          @saintjooj
+        </a>
+        <p>Student searching for new technologies and self-grown</p>
+        <ul>
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UCHlK7jlH1fxyvOu1BTyzNNA"
+              target="_blank"
+            >
+              <img src="images/Youtube.svg" alt="Ícone Youtube" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/saintjooj/" target="_blank">
+              <img src="images/Instagram.svg" alt="Ícone Instagram" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/profile.php?id=100013380396321"
+              target="_blank"
+            >
+              <img src="images/Facebook.svg" alt="Ícone Facebook" />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/SaintJooJ" target="_blank">
+              <img src="images/Twitter.svg" alt="Ícone Twitter" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <script>
+      const LinksSocialMedia = {
+        github: 'jakeliny',
+        youtube: 'jakelinygracielly',
+        facebook: 'maykbrito',
+        instagram: 'jakeliny.gracielly',
+        twitter: 'jakelinytec'
+      }
+
+      function changeSocialMediaLinks() {
+        for (let li of socialLinks.children) {
+          const social = li.getAttribute('class')
+
+          li.children[0].href = `https://${social}.com/${LinksSocialMedia[social]}`
+
+          alert(li.children[0].href)
+        }
+      }
+
+      changeSocialMediaLinks()
+    </script>
+  </body>
+</html>
